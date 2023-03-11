@@ -5,16 +5,20 @@ import styles from "./MovieDetails.module.css";
 
 export function MovieDetails() {
   const { movieId } = useParams();
+  const [isLoading, setIsLoading] = useState(true);
   const [movie, setMovie] = useState(null);
 
   useEffect(() => {
+    setIsLoading(true);
+
     get("/movie/" + movieId).then((data) => {
       setMovie(data);
+      setIsLoading(false);
     });
   }, [movieId]);
 
-  if (!movie) {
-    return null;
+  if (isLoading) {
+    return <div>Loading...</div>;
   }
 
   const imageUrl = "https://image.tmdb.org/t/p/w500" + movie.poster_path;
