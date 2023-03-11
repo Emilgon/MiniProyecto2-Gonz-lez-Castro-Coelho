@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { get } from "../utils/httpClient";
 import styles from "./MovieDetails.module.css";
-import {getMoviePoster} from "../utils/getMoviePoster"
 
 export function MovieDetails() {
   const { movieId } = useParams();
@@ -19,10 +18,10 @@ export function MovieDetails() {
   }, [movieId]);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <div>Loading.............</div>;
   }
 
-  const imageUrl =getMoviePoster(movie.poster_path,500);
+  const imageUrl = "https://image.tmdb.org/t/p/w500" + movie.poster_path;
   return (
     <div className={styles.detailsContainer}>
       <img
