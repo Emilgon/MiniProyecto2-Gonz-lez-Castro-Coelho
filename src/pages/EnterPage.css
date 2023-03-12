@@ -37,6 +37,19 @@ h1 {
   background-color:#ff0000;
 }
 
+.Logout {
+  margin-top: 2%;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 3px solid black;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  background-color:#4b0082;
+}
+
 h3 {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: x-large;

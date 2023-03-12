@@ -1,16 +1,21 @@
 import "./HomePage.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { createRoot } from "react-dom/client";
-
+import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import { Navigate } from "react-router";
 import { EnterPage } from "./EnterPage";
+import { LPRedirect } from "../LPRedirect";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
-function Redirect(){
-    root.render(
-        <EnterPage/>
-    );}
+export function Redirect(){
+    return(
+        root.render(
+            <EnterPage/>
+        )
+    )
+
+}
 export function HomePage(){
     return(<>
     <h1 className="h1">Movies</h1>
