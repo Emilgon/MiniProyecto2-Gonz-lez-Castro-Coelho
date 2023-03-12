@@ -5,6 +5,27 @@
     padding: 40px;
     justify-content: center;
   }
+
+.button{
+  border-radius: 15px;
+  margin-left: 2%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
+  font-weight: bolder;
+  text-align: center;
+  background-color: white;
+  text-shadow: 0 2px 2px #FF0000, 
+      -2px 5px 0 #ff7f00;
+  color: black;
+  cursor: pointer;
+}
+
+.buttons{
+  margin: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+  
   
   @media (max-width: 560px) {
     .moviesGrid {
