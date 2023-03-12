@@ -37,19 +37,6 @@ h1 {
   background-color:#ff0000;
 }
 
-.Logout {
-  margin-top: 2%;
-  margin-left: auto;
-  margin-bottom: auto;
-  margin-right: auto;
-  width: 50%;
-  border: 3px solid black;
-  padding: 10px;
-  border-radius: 20px;
-  text-align: center;
-  background-color:#4b0082;
-}
-
 h3 {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: x-large;
@@ -77,25 +64,4 @@ h3 {
   background-color: #ff7f00;
   cursor: pointer;
   color: black;
-}
-
-.logout-btn{
-  border-radius: 10px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: bolder;
-  padding: 2%;
-  font-weight: bolder;
-  text-align: center;
-  color: black;
-  background-color: white;
-  text-shadow: 0 2px 2px #FF0000, 
-  -2px 5px 0 #ff7f00;
-}
-
-.logout-btn:hover{
-  cursor: pointer;
-  background-color: #ff7f00;
-  color: black;
-  text-shadow: 0 2px 2px #FF0000, 
-  -2px 5px 0 #ff7f00;
 }
