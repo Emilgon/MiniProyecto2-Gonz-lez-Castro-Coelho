@@ -18,7 +18,7 @@ export function MovieDetails() {
   }, [movieId]);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <div>Loading.............</div>;
   }
 
   const imageUrl = "https://image.tmdb.org/t/p/w500" + movie.poster_path;
