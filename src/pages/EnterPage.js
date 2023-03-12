@@ -3,6 +3,16 @@ import {signInWithGoogle } from "../Firebase";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, updateCurrentUser } from "firebase/auth";
 import React, { useState } from "react";
 import { auth } from "../Firebase";
+import { LPRedirect } from "../LPRedirect";
+import { createRoot } from "react-dom/client";
+
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+function Redirect(){
+    root.render(
+        <LPRedirect/>
+    );}
 
 export function EnterPage(){
     
@@ -21,6 +31,7 @@ export function EnterPage(){
         try{
             const user = await createUserWithEmailAndPassword(auth, registerEmail, registerPassword);
             console.log(user);
+            Redirect();
         } catch (error){
             console.log(error.message);
         }
@@ -30,6 +41,7 @@ export function EnterPage(){
         try{
             const user = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
             console.log(user);
+            Redirect();
         } catch (error){
             console.log(error.message);
         }
