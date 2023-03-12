@@ -1,0 +1,55 @@
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #ff0000;
+    text-shadow: 0 2px 2px #FF0000, 
+      -2px 5px 0 #ff7f00, 
+      -4px 10px 0 #ffff00,
+      -8px 15px 0 #00ff00,
+      -12px 20px 0 #0000ff,
+      -16px 25px 0 #4b0082,
+      -20px 30px 0 #9400d3;
+}
+
+.hero-text{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    text-align: center;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    
+}
+
+.hero-text .start-btn{
+    text-decoration: none;
+    background: white;
+    padding: 1rem 2rem 1rem;
+    border-color: black;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: black;
+    text-shadow: 0 2px 2px #FF0000, 
+      -2px 5px 0 #ff7f00;
+}
+
+
+@media screen and(max-width: 555px) {
+
+    .hero-text .start-btn{
+        padding: 0.6rem 1rem;
+        border-radius: 10px;
+        font-size: 1rem;
+    }
+
+}
+
+.hero-text .start-btn:hover{
+    text-decoration: none;
+    background-color: #ff7f00;
+    cursor: pointer;
+    color: black;
+}

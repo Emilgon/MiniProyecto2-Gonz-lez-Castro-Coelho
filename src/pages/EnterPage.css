@@ -1,0 +1,88 @@
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #ff0000;
+    text-shadow: 0 2px 2px #FF0000, 
+      -2px 5px 0 #ff7f00, 
+      -4px 10px 0 #ffff00,
+      -8px 15px 0 #00ff00,
+      -12px 20px 0 #0000ff,
+      -16px 25px 0 #4b0082,
+      -20px 30px 0 #9400d3;
+}
+
+.Login {
+  margin-top: 5%;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: #00ff00;
+}
+
+.Register {
+  margin-top: 2%;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 3px solid black;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  background-color:#ff0000;
+}
+
+h3 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+  font-weight: bolder;
+  border: 3px solid white;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  text-shadow: 0 2px 2px #FF0000, 
+      -2px 5px 0 #ff7f00;
+}
+
+.btn {
+  border-radius: 15px;
+  margin-left: 1%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
+  font-weight: bolder;
+  text-align: center;
+  background-color: white;
+}
+
+.btn:hover{
+  text-decoration: none;
+  background-color: #ff7f00;
+  cursor: pointer;
+  color: black;
+}
+
+.logout-btn:hover{
+  text-decoration: none;
+  background-color: #ff7f00;
+  cursor: pointer;
+  color: black;
+  text-shadow: 0 2px 2px #FF0000, 
+      -2px 5px 0 #ff7f00;
+}
+
+.logout-btn {
+  border-radius: 15px;
+  margin-left: 2%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: medium;
+  font-weight: bolder;
+  text-align: center;
+  background-color: white;
+  text-shadow: 0 2px 2px #FF0000, 
+      -2px 5px 0 #ff7f00;
+}

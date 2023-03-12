@@ -1,13 +1,17 @@
 import { MoviesGrid } from "../components/MoviesGrid";
 import { Search } from "../components/Search";
-import { useQuery } from "../hooks/useQuery";
+import "./EnterPage.css";
+
+function Redirect(){
+  window.location.reload(false);
+}
+
 export function LandingPage() {
-  const query = useQuery();
-  const search = query.get("search");
   return (
-    <div>
-      <Search/>
-      <MoviesGrid key={search} search={search}/>
-    </div>
+  <div>
+    <button onClick={Redirect} className="logout-btn">LOG OUT</button>
+    <Search/>
+    <MoviesGrid />
+  </div>
   );
 }
