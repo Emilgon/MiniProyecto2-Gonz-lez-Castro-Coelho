@@ -14,7 +14,6 @@ export function App() {
       <main>
         <Switch>
           <Route exact path="/movies/:movieId">
-            <div>ola</div>
             <MovieDetails />
           </Route>
           <Route path="/">
