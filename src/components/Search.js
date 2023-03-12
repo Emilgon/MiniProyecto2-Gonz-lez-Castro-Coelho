@@ -26,6 +26,8 @@ export function Search() {
           className={styles.searchInput}
           type="text"
           value={searchText}
+          placeholder="Search movies"
+          aria-label="Search movies"
           onChange={(e) => setSearchText(e.target.value)}
         />
         <button className={styles.searchButton} type="submit">

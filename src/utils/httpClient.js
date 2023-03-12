@@ -1,4 +1,5 @@
-const API = "https://api.themoviedb.org/3"
+const API = "https://api.themoviedb.org/3";
+const API_KEY="622f877fa3996428de81d387f92329e0";
 export function get(path) {
   return fetch(API + path, {
     headers: {
