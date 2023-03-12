@@ -1,5 +1,15 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { createRoot } from "react-dom/client";
+import { LPRedirect } from "./LPRedirect";
+
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+function Redirect(){
+    root.render(
+        <LPRedirect/>
+    );}
 
 
 const firebaseConfig = {
@@ -19,6 +29,6 @@ const provider = new GoogleAuthProvider();
 export const signInWithGoogle = () => {
   signInWithPopup(auth, provider).then((result) => {
     const user = result.user;
-    window.location.href = "./pages/HomePage";
+    Redirect();
 } ).catch((error) => {console.log(error);});
 }
