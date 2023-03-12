@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import { get } from "../utils/httpClient";
 import styles from "./MovieDetails.module.css";
 
@@ -7,16 +7,18 @@ export function MovieDetails() {
   const { movieId } = useParams();
   const [isLoading, setIsLoading] = useState(true);
   const [movie, setMovie] = useState(null);
-
+  console.log(movieId)
+  
   useEffect(() => {
     setIsLoading(true);
-
+    
     get("/movie/" + movieId).then((data) => {
       setMovie(data);
       setIsLoading(false);
     });
+    
   }, [movieId]);
-
+  
   if (isLoading) {
     return <div>Loading.............</div>;
   }
@@ -31,7 +33,7 @@ export function MovieDetails() {
       />
       <div className={`${styles.col} ${styles.movieDetails}`}>
         <p className={styles.firstItem}>
-          <strong>Title:</strong> {movie.title}
+          <strong>Title: {movie.title}</strong> 
         </p>
         <p>
           <strong>Genres:</strong>{" "}

@@ -13,12 +13,11 @@ export function App() {
       </header>
       <main>
         <Switch>
-          <Route exact path="/movies/:movieId">
-            <div>ola</div>
-            <MovieDetails />
-          </Route>
-          <Route path="/">
+          <Route exact path="/">
             <LandingPage />
+          </Route>
+          <Route path="/movies/:movieId">
+            <MovieDetails />
           </Route>
         </Switch>
       </main>
