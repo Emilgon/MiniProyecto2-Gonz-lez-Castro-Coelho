@@ -41,6 +41,28 @@ export function MovieDetails() {
         <p>
           <strong>Description:</strong> {movie.overview}
         </p>
+        <p>
+          <strong>Idioma original:</strong> {movie.original_language}
+        </p>
+        <p>
+          <strong>Original Language:</strong> {movie.original_language}
+        </p>
+        <p>
+          <strong>Budget:</strong> {movie.budget}
+        </p>
+        <p>
+          <strong>Rating:</strong> {movie.popularity}
+        </p>
+        <p>
+          <strong>Production companies:</strong>{" "}
+          {movie.production_companies.map((production_companies) => production_companies.name).join(", ")}
+        </p>
+        <p>
+          <strong>Release Date:</strong> {movie.release_date}
+        </p>
+        <p>
+          <strong>Status:</strong> {movie.status}
+        </p>
       </div>
     </div>
   );

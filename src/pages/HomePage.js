@@ -1,9 +1,6 @@
 import "./HomePage.css";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
-import { Navigate } from "react-router";
 import { EnterPage } from "./EnterPage";
-import { LPRedirect } from "../LPRedirect";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);

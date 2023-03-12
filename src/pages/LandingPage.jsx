@@ -1,22 +1,15 @@
-import { Link } from "react-router-dom";
 import { MoviesGrid } from "../components/MoviesGrid";
 import { Search } from "../components/Search";
 import "./EnterPage.css";
-
-function Redirect(){
-  window.location.reload(false);
-}
-
-function Upcoming(){
-
-}
+import { useQuery } from "../hooks/useQuery";
 
 export function LandingPage() {
+  const query = useQuery();
+  const search = query.get("search");
   return (
-  <div>
-    <button onClick={Redirect} className="logout-btn">LOG OUT</button>
-    <Search />
-    <MoviesGrid />
-  </div>
+    <div>
+      <Search />
+      <MoviesGrid key={search} search={search}/>
+    </div>
   );
 }
