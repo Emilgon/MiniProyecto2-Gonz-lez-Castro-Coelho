@@ -3,16 +3,7 @@ import {signInWithGoogle } from "../Firebase";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, updateCurrentUser } from "firebase/auth";
 import React, { useState } from "react";
 import { auth } from "../Firebase";
-import { LPRedirect } from "../LPRedirect";
-import { createRoot } from "react-dom/client";
 
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
-
-function Redirect(){
-    root.render(
-        <LPRedirect/>
-    );}
 
 export function EnterPage(){
     

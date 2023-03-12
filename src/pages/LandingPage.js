@@ -1,16 +1,10 @@
 import { MoviesGrid } from "../components/MoviesGrid";
 import { Search } from "../components/Search";
 import "./EnterPage.css";
-import { createRoot } from "react-dom/client";
-import { EnterPage } from "./EnterPage";
-
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
 
 function Redirect(){
-    root.render(
-        <EnterPage/>
-    );}
+    window.location.reload(false);
+}
 
 export function LandingPage() {
   return (
