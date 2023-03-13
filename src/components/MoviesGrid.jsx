@@ -26,11 +26,7 @@ export function MoviesGrid({ search }) {
     
   }, [search,page]);
 
-  const Upcoming = () => {
-    const url = "/movie/upcoming";
-    get(url).then((data) => {
-      setMovies(prevMovies=>prevMovies.concat(data.results));
-  })};
+  
 
   if (!isLoading && movies.length===0){
     return <Empty/>;
@@ -43,14 +39,7 @@ export function MoviesGrid({ search }) {
       next={()=>setPage((prevPage)=>prevPage+1)}
       loader={<div>Loading...</div>}
     >
-      <div className={styles.buttons}>
-        <Link to ={"/"} > 
-          <button className={styles.button}> Descubrir películas </button>
-        </Link> 
-        <Link to ={"/movie/upcoming"} > 
-          <button onClick={Upcoming} className={styles.button}> Próximos estrenos </button>
-        </Link> 
-      </div>
+      
       <ul className={styles.moviesGrid}>
         {movies.map((movie) => (
           <MovieCard key={movie.id} movie={movie} />
