@@ -28,16 +28,6 @@ export function MoviesGrid({ search }) {
     });
   }, [search,page]);
 
-  useEffect(()=> {
-    setIsLoading(true);
-    const discoverUrl = "/discover/movie"
-    get(discoverUrl).then((data) => {
-      setMovies(prevMovies=>prevMovies.concat(data.results));
-      setDiscover(prevMovies=>prevMovies.concat(data.results));
-      setHasMore(data.page<data.total_pages)
-      setIsLoading(false);
-    });
-  }, []);
 
   useEffect(()=> {
     setIsLoading(true);
@@ -48,6 +38,18 @@ export function MoviesGrid({ search }) {
       setIsLoading(false);
     });
   }, []);
+
+
+  useEffect(()=> {
+    setIsLoading(true);
+    const discoverUrl = "/discover/movie"
+    get(discoverUrl).then((data) => {
+      setDiscover(prevMovies=>prevMovies.concat(data.results));
+      setHasMore(data.page<data.total_pages)
+      setIsLoading(false);
+    });
+  }, []);
+
   
 
   const showUpcoming = async () =>{
