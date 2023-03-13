@@ -4,7 +4,6 @@ import { MovieCard } from "./MovieCard";
 import styles from "./MoviesGrid.module.css";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { Empty } from "./Empty";
-import { Link } from "react-router-dom";
 
 
 export function MoviesGrid({ search }) {

@@ -8,7 +8,7 @@ export function LPRedirect() {
     <Router>
       <header>
         <Link to="/">
-          <h1 className={styles.title}>Movies</h1>
+          <h1 className={styles.title}>Movies XD</h1>
         </Link>
       </header>
       <main>

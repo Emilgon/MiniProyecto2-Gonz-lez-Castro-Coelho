@@ -5,7 +5,6 @@ import React, { useState } from "react";
 import { auth } from "../Firebase";
 import { LPRedirect } from "../LPRedirect";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
